@@ -85,6 +85,7 @@
     border: none;
     border-radius: 20px;
     transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 #landing-page #add-contact-btn:hover{
     transform: scale(1.1);
@@ -97,6 +98,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 #landing-page #action-btns .action-btn{
     background-color: rgba(0,0,0,0.1);
@@ -107,6 +109,7 @@
     border-radius: 15px;
     margin-right: 10px;
     transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 #landing-page #action-btns .action-btn:hover,active{
     transform: scale(1.08);
@@ -115,24 +118,132 @@
 /* contacts page */
 #contacts-page{
     background-color: white;
-    height: 500px;
+    padding: 60px 0 60px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#contacts-page #text{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    padding-left: 40px;
+
+}
+#contacts-page #text h1{
+    margin: auto;
+    text-align: left;
+    color: var(--text-color);
+    font-family: sans-serif;
+    font-size: 35px;
+}
+#contacts-page #text p{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#contacts-page #contact-list-box{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding-right: 40px;
+    margin-left: 200px;
+    cursor: pointer;
+
+}
+#contacts-page .contact-list{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+
+}
+#contacts-page .contact-list:hover{
+    transform: scale(1.1);
+}
+.contact-list .contact-profile-pic{
+    background-color: transparent;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+.contact-list .contact-profile-details{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+}
+.contact-list .contact-profile-details .contact-name{
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.8);
+}
+.contact-list .contact-profile-details .contact-number{
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: transparent;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
 }
 
 /* add contacts page */
 #add-contact-page{
-    background-color: blue;
+    background-color: var(--base-color);
     height: 400px;
+    padding: 60px 0 60px 200px;
 }
 
 /* recent contacts page */
 #recent-contacts-page{
     background-color: purple;
     height: 400px;
+    padding: 60px 0 60px 200px;
+    position: relative;
+
 }
 
 /* footer */
 footer{
     background-color: pink;
     height: 200px;
+    padding: 60px 0 60px 200px;
 }
 

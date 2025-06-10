@@ -61,6 +61,7 @@
         <!-- main-content -->
 
         <div id="scroll-div">
+            <!--landing page -->
             <div id="landing-page">
                 <div id="text-div">
                     <h1 id="h1-box">Welcome to Your Contact<br/>Book</h1>
@@ -75,12 +76,92 @@
                     <button class="action-btn" id="favorites-btn">Favorites</button>
                     <button class="action-btn" id="recent-btn" style="margin-right: 0;">Recently Added</button>
                 </div>
-
             </div>
+            <!--contacts page -->
             <div id="contacts-page">
-
+                <div id="text">
+                    <h1>Your Contacts</h1>
+                    <p> A list of all your saved contacts.</p>
+                </div>
+                <div id="contact-list-box">
+                    <div class="contact-list">
+                        <div class="contact-profile-pic" style="background-image: url(images/person1.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                        <div class="contact-profile-details">
+                            <h2 class="contact-name">Liam Anderson</h2>
+                            <p class="contact-number">073 4566 532</p>
+                        </div>
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-profile-pic" style="background-image: url(images/person2.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                        <div class="contact-profile-details">
+                            <h2 class="contact-name">Noah Thompson</h2>
+                            <p class="contact-number">073 4566 532</p>
+                        </div>
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-profile-pic" style="background-image: url(images/person3.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                        <div class="contact-profile-details">
+                            <h2 class="contact-name">Ethan Harris</h2>
+                            <p class="contact-number">073 4566 532</p>
+                        </div>
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-profile-pic" style="background-image: url(images/person4.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                        <div class="contact-profile-details">
+                            <h2 class="contact-name">Oliver Roberts</h2>
+                            <p class="contact-number">073 4566 532</p>
+                        </div>
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-profile-pic" style="background-image: url(images/person5.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                        <div class="contact-profile-details">
+                            <h2 class="contact-name">Emma Wilson</h2>
+                            <p class="contact-number">073 4566 532</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="add-contact-page"></div>
+            <!--add contact page -->
+            <div id="add-contact-page">
+                <div id="outer-div">
+                    <div id="text-box">
+                        <h1>Add New Contact</h1>
+                        <p>Fill in the details</p>
+                    </div>
+                </div>
+                <form>
+                    <div id="new-contact-box">
+                        <div id="name-email">
+                            <div id="name-box">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" autocomplete="name" placeholder="Enter name...">
+                            </div>
+                            <div id="email-box">
+                                <label for="email">Email</label>
+                                <input id="email" type="text" autocomplete="email" placeholder="Enter Email...">
+                            </div>
+                        </div>
+                        <div id="phone-category">
+                            <div id="phone-box">
+                                <label for="phone">Name</label>
+                                <input id="phone" type="text" autocomplete="phone" placeholder="Enter Phone...">
+                            </div>
+                            <div id="category-box">
+                                <label for="category">Name</label>
+                                <div id="category">
+                                        <button id="friend-btn">Friend</button>
+                                        <button id="colleague-btn">Colleague</button>
+                                        <button id="family-btn">Family</button>
+                                        <button id="other-btn">Other</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="submit" id="save-contact-btn">Save Contact</button>
+                    </div>
+                </form>
+            </div>
+            <!--recent contact page -->
             <div id="recent-contacts-page"></div>
             <footer></footer>
         </div>

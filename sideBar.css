@@ -27,6 +27,7 @@
     justify-content: start;
     align-items: center;
     padding-left: 10px;
+    cursor: pointer;
 }
 .nav-link:hover{
     background-color: var(--primary-color);
