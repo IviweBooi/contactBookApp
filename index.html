@@ -9,12 +9,14 @@
     <!-- my stylesheets -->
     <link rel="stylesheet" type="text/css" href="header.css"/>
     <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="sideBar.css"/>
     <!-- tab icon -->
     <link rel="icon" type="image/png" href="images/phonebook.png"/>
     <!-- icons -->
     <script src="https://kit.fontawesome.com/f88cd4a022.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- header -->
     <header>
         <div class="header-div" id="left-div">
             <button type="button" id="user-profile-pic"><i class="fa-solid fa-user"></i></button>
@@ -28,5 +30,29 @@
             </div>
         </div>
     </header>
+
+    <!-- sideBar -->
+    <nav>
+        <div class="nav-link" id="contacts-box">
+            <div class="nav-icon"><i class="fa-solid fa-address-book"></i></div>
+            <h2 class="link-item">Contacts</h2>
+        </div>
+        <div class="nav-link" id="favourites-box">
+            <div class="nav-icon"><i class="fa-solid fa-star"></i></div>
+            <h2 class="link-item">Favorites</h2>
+        </div>
+        <div class="nav-link" id="recent-box">
+            <div class="nav-icon"><i class="fa-solid fa-clock"></i></div>
+            <h2 class="link-item">Recently Added</h2>
+        </div>
+        <div class="nav-link" id="add-contact-box">
+            <div class="nav-icon"><i class="fa-solid fa-plus"></i></div>
+            <h2 class="link-item">Add Contact</h2>
+        </div>
+        <div class="nav-link" id="delete-contact-box">
+            <div class="nav-icon"><i class="fa-solid fa-trash"></i></div>
+            <h2 class="link-item">Delete Contact</h2>
+        </div>
+    </nav>
 </body>
 </html>
