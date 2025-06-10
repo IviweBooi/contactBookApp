@@ -1,25 +1,26 @@
-nav{
+#content #side-div{
     background-color: var(--base-variant);
-    height:100vh;
-    width: 200px;
+    min-width: 200px;
     position: fixed;
+    height: 100%;
     left:0;
     top: 61px;
-    z-index: 998;
+    z-index: 2;
     box-shadow: 0 1px 2px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: start;
     align-items: stretch;
-    padding: 20px 0;
+    padding: 20px 5px;
 }
 
 /* nav-links container */
-nav .nav-link{
+.nav-link{
     height: 40px;
     background-color: transparent;
     border: none;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -34,7 +35,7 @@ nav .nav-link{
     color: var(--base-color);
 }
 /* icon container */
-nav .nav-icon{
+.nav-icon{
     background-color: rgba(255,255,255,1);
     height: 25px;
     width: 25px;
