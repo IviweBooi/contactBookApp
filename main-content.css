@@ -1,5 +1,5 @@
 #content{
-    background-color: red;
+    background-color: transparent;
     margin-top: 61px;
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@
 
 }
 
-/* landing page */
+/* ======================== landing page ======================== */
 #landing-page{
     background-color: var(--base-color);
     padding: 60px 0 60px 200px;
@@ -116,7 +116,7 @@
     color: var(--primary-color);
 }
 
-/* contacts page */
+/* ======================== contacts page ======================== */
 #contacts-page{
     background-color: white;
     padding: 60px 0 60px 200px;
@@ -227,7 +227,7 @@
     font-family: sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: rgba(0,0,0,0.8);
+    color: var(--text-color);
 }
 .contact-list .contact-profile-details .contact-number{
     margin-top: 5px;
@@ -239,7 +239,7 @@
     color: rgba(0,0,0,0.5);
 }
 
-/* add contacts page */
+/* ======================== add contacts page ======================== */
 #add-contact-page{
     background-color: var(--base-color);
     padding: 60px 0 60px 200px;
@@ -247,6 +247,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 #add-contact-page #text-box{
     background-color: transparent;
@@ -410,9 +411,34 @@
 }
 #add-contact-page form #phone-category #category-box #category .cat-btn:focus{
     transform: scale(1);
-    background-color: var(--primary-color);
+    background-color: rgb(0,128,64);
     color: white;
 }
+#add-contact-page form #upload-image-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    align-self: start;
+    margin-bottom: 40px;
+}
+
+#add-contact-page form #upload-image-box label{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#add-contact-page form #upload-image-box #upload-image{
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width: 400px;
+}
+
 
 #add-contact-page form #save-contact{
     padding: 15px 60px;
@@ -423,24 +449,217 @@
     border-radius: 20px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+    visibility: visible;
+}
+
+#add-contact-page form #save-contact:hover{
+    transform: scale(1.1);
 }
 
 
 
-/* recent contacts page */
+/* ======================== recent contacts page ======================== */
 #recent-contacts-page{
-    background-color: purple;
-    height: 400px;
+    background-color: white;
     padding: 60px 0 60px 200px;
     position: relative;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#recent-contacts-page #text-container{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    padding-left: 40px;
 
 }
+#recent-contacts-page #text-container h1{
+    margin: auto;
+    text-align: left;
+    color: var(--text-color);
+    font-family: sans-serif;
+    font-size: 35px;
+}
+#recent-contacts-page #text-container p{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
-/* footer */
-footer{
-    background-color: pink;
-    height: 200px;
+#recent-contacts-page #recent-contact-list-box{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding-right: 40px;
+    margin-left: 100px;
+    cursor: pointer;
+
+}
+#recent-contacts-page .contact-list{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+
+}
+#recent-contacts-page .contact-list:hover{
+    transform: scale(1.1);
+}
+.recent-contact-list .contact-profile-pic{
+    background-color: transparent;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+
+}
+.contact-list .contact-profile-pic::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width:4%;
+    top: 0;
+    left: 53px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+}
+.contact-list .contact-profile-pic:hover::after{
+    background-color: var(--primary-color);
+}
+.contact-list .contact-profile-details{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+}
+.contact-list .contact-profile-details .contact-name{
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.contact-list .contact-profile-details .contact-number{
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: transparent;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
+
+
+
+/* ======================== footer ======================== */
+
+.footer {
     padding: 60px 0 60px 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-media, .legal {
+    flex: 1;
+    margin: 10px;
+}
+.contact-info{
+    margin: 10px 10px 10px 200px;
+}
+.social-media{
+    background-color: transparent;
+    width: fit-content;
+    text-align: start;
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.footer-container ul{
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-container ul li{
+    margin-right: 40px;
+}
+.footer-container ul li a i{
+    transform: scale(2);
+    transition: all ease-in-out 0.3s;
+}
+.footer-container ul li a i:hover{
+    transform: scale(2.5);
+}
+h4 {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+p, a {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #ddd;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.copyright {
+    font-family: sans-serif;
+    margin-left: 200px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
 

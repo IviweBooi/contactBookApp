@@ -11,6 +11,6 @@ body{
 :root{
     --base-color: rgba(255, 255, 255, 1);         /* Pure white background */
     --base-variant: rgba(240, 240, 240, 1);       /* Light gray for cards or sections */
-    --text-color: rgba(26, 26, 26, 1);            /* Dark text for legibility */
+    --text-color: #333;            /* Dark text for legibility */
     --primary-color: rgba(0, 64, 128, 1);          /* Deep blue for UI elements */
 }

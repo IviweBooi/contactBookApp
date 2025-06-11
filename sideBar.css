@@ -15,7 +15,7 @@
     padding: 20px 5px;
 }
 
-/* nav-links container */
+/* ======================== nav-links container ======================== */
 .nav-link{
     height: 40px;
     background-color: transparent;
@@ -35,7 +35,7 @@
 .nav-link:hover h2{
     color: var(--base-color);
 }
-/* icon container */
+/* ======================== icon container ======================== */
 .nav-icon{
     background-color: rgba(255,255,255,1);
     height: 25px;
