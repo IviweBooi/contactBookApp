@@ -189,7 +189,7 @@
     height: 45px;
     width: 45px;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -197,6 +197,20 @@
     position: relative;
     margin-right: 20px;
 
+}
+.contact-list .contact-profile-pic::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width:4%;
+    top: 0;
+    left: 53px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+}
+.contact-list .contact-profile-pic:hover::after{
+    background-color: var(--primary-color);
 }
 .contact-list .contact-profile-details{
     background-color: transparent;
@@ -211,7 +225,7 @@
 .contact-list .contact-profile-details .contact-name{
     margin: auto;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: rgba(0,0,0,0.8);
 }
@@ -228,9 +242,190 @@
 /* add contacts page */
 #add-contact-page{
     background-color: var(--base-color);
-    height: 400px;
     padding: 60px 0 60px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
+#add-contact-page #text-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+#add-contact-page  #text-box h1{
+    color: var(--text-color);
+    font-size: 35px;
+    align-self: start;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#add-contact-page  #text-box p{
+    color: rgba(0,0,0,0.5);
+    font-size: 16px;
+    align-self: center;
+}
+
+#add-contact-page form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 40px 40px;
+}
+#add-contact-page form #name-email{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#add-contact-page form #name-email label{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#add-contact-page form #name-email #name{
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width: 400px;
+}
+
+#add-contact-page form #name-email #name::placeholder{
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.3);
+}
+
+
+#add-contact-page form #name-email #email{
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width: 400px;
+}
+
+#add-contact-page form #name-email #email::placeholder{
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.3);
+}
+
+#add-contact-page form #name-email #name-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#add-contact-page form #name-email #email-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 80px;
+}
+
+
+#add-contact-page form #phone-category{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#add-contact-page form #phone-category label{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#add-contact-page form #phone-category #phone{
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width: 400px;
+}
+
+#add-contact-page form #phone-category #phone::placeholder{
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.3);
+}
+
+
+#add-contact-page form #phone-category #category{
+    background-color: transparent;
+    font-family: sans-serif;
+    padding: 0px 15px 0px 5px;
+    border: none;
+    width: 400px;
+}
+
+
+#add-contact-page form #phone-category #phone-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#add-contact-page form #phone-category #category-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 80px;
+}
+
+#add-contact-page form #phone-category #category-box #category .cat-btn{
+    padding: 12px 10px;
+    font-family: sans-serif;
+    color: var(--text-color);
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+#add-contact-page form #phone-category #category-box #category .cat-btn:hover{
+    transform: scale(1.07);
+}
+#add-contact-page form #phone-category #category-box #category .cat-btn:focus{
+    transform: scale(1);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#add-contact-page form #save-contact{
+    padding: 15px 60px;
+    font-family: sans-serif;
+    color: var(--base-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+
 
 /* recent contacts page */
 #recent-contacts-page{
@@ -238,6 +433,7 @@
     height: 400px;
     padding: 60px 0 60px 200px;
     position: relative;
+
 
 }
 

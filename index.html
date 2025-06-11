@@ -123,42 +123,40 @@
             </div>
             <!--add contact page -->
             <div id="add-contact-page">
-                <div id="outer-div">
-                    <div id="text-box">
-                        <h1>Add New Contact</h1>
-                        <p>Fill in the details</p>
-                    </div>
-                </div>
-                <form>
-                    <div id="new-contact-box">
-                        <div id="name-email">
-                            <div id="name-box">
-                                <label for="name">Name</label>
-                                <input id="name" type="text" autocomplete="name" placeholder="Enter name...">
-                            </div>
-                            <div id="email-box">
-                                <label for="email">Email</label>
-                                <input id="email" type="text" autocomplete="email" placeholder="Enter Email...">
-                            </div>
-                        </div>
-                        <div id="phone-category">
-                            <div id="phone-box">
-                                <label for="phone">Name</label>
-                                <input id="phone" type="text" autocomplete="phone" placeholder="Enter Phone...">
-                            </div>
-                            <div id="category-box">
-                                <label for="category">Name</label>
-                                <div id="category">
-                                        <button id="friend-btn">Friend</button>
-                                        <button id="colleague-btn">Colleague</button>
-                                        <button id="family-btn">Family</button>
-                                        <button id="other-btn">Other</button>
-                                </div>
-                            </div>
 
+                <div id="text-box">
+                    <h1>Add New Contact</h1>
+                    <p>Fill in the details below.</p>
+                </div>
+
+                <form>
+                    <div id="name-email">
+                        <div id="name-box">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" autocomplete="name" placeholder="Enter name...">
                         </div>
-                        <button type="submit" id="save-contact-btn">Save Contact</button>
+                        <div id="email-box">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" autocomplete="email" placeholder="Enter Email...">
+                        </div>
                     </div>
+                    <div id="phone-category">
+                        <div id="phone-box">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="text" autocomplete="phone" placeholder="Enter Phone...">
+                        </div>
+                        <div id="category-box">
+                            <label for="category">Category</label>
+                            <div id="category">
+                                    <button style="border:none;" class="cat-btn" id="friend-btn" type="button">Friend</button>
+                                    <button style="border:none;" class="cat-btn" id="colleague-btn" type="button">Colleague</button>
+                                    <button style="border:none;" class="cat-btn" id="family-btn" type="button">Family</button>
+                                    <button style="border:none;" class="cat-btn" id="other-btn" type="button">Other</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="save-contact" type="submit" id="save-contact-btn">Save Contact</button>
                 </form>
             </div>
             <!--recent contact page -->
