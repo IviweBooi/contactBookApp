@@ -16,7 +16,7 @@
     <!-- icons -->
     <script src="https://kit.fontawesome.com/f88cd4a022.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
     <!-- header -->
     <header style="z-index: 999;">
         <div class="header-div" id="left-div">
@@ -24,7 +24,7 @@
             <h1 id="user-name">Iviwe Booi</h1>
         </div>
         <div class="header-div" id="right-div">
-            <button type="button" id="theme-icon"><img src="images/theme-icon.png"></button>
+            <button onclick="activateThemeChange()" type="button" id="theme-icon"><img src="images/theme-icon.png"></button>
             <div id="search-bar-box">
                 <input type="text" placeholder="Search in site..." autocomplete="on">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -224,6 +224,6 @@
             </footer>
         </div>
     </div>
-
+    <script src="darkMode.js"></script>
 </body>
 </html>

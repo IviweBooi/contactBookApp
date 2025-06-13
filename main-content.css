@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-bottom-color);
 
 }
 #landing-page #text-div{
@@ -47,7 +47,7 @@
 #landing-page #h1-box{
     background-color: transparent;
     text-align: center;
-    color: var(--text-color);
+    color: var(--heading-color);
     font-family: sans-serif;
     font-size: 40px;
     padding-bottom: 10px;
@@ -58,7 +58,7 @@
 #landing-page #p-box{
     background-color: transparent;
     text-align: center;
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
     font-family: sans-serif;
     font-size: 16px;
     display: flex;
@@ -66,15 +66,16 @@
     padding-bottom: 15px;
 }
 #landing-page #search-contact-box #search-contact{
+    background-color: var(--input-background);
     width: 400px;
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
 }
 #landing-page #search-contact-box #search-contact::placeholder{
     font-family: sans-serif;
-    color: rgba(0,0,0,0.3);
+    color: var(--placeholder-color);
 }
 #landing-page #add-contact-btn{
     background-color: var(--primary-color);
@@ -101,7 +102,7 @@
 
 }
 #landing-page #action-btns .action-btn{
-    background-color: rgba(0,0,0,0.1);
+    background-color: var(--button-grey);
     color: var(--text-color);
     font-family: sans-serif;
     padding: 10px 20px;
@@ -118,7 +119,7 @@
 
 /* ======================== contacts page ======================== */
 #contacts-page{
-    background-color: white;
+    background-color: var(--base-color);
     padding: 60px 0 60px 200px;
     position: relative;
     display: flex;
@@ -126,7 +127,7 @@
     flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 #contacts-page #text{
     background-color: transparent;
@@ -142,13 +143,13 @@
 #contacts-page #text h1{
     margin: auto;
     text-align: left;
-    color: var(--text-color);
+    color: var(--heading-color);
     font-family: sans-serif;
     font-size: 35px;
 }
 #contacts-page #text p{
     margin-top: 15px;
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -174,7 +175,7 @@
     justify-content: start;
     align-items: center;
     width: 400px;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid var(--border-color);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
@@ -201,7 +202,7 @@
 .contact-list .contact-profile-pic::after{
     content: '';
     position: absolute;
-    background-color: rgba(0,0,0,0.3);
+    background-color: var(--search-bar-icon-color);
     height: 100%;
     width:4%;
     top: 0;
@@ -236,7 +237,7 @@
     position: relative;
     font-family: sans-serif;
     font-size: 14px;
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
 }
 
 /* ======================== add contacts page ======================== */
@@ -247,7 +248,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 #add-contact-page #text-box{
     background-color: transparent;
@@ -261,14 +262,14 @@
 }
 
 #add-contact-page  #text-box h1{
-    color: var(--text-color);
+    color: var(--heading-color);
     font-size: 35px;
     align-self: start;
     margin-top: 0;
     margin-bottom: 10px;
 }
 #add-contact-page  #text-box p{
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
     font-size: 16px;
     align-self: center;
 }
@@ -292,36 +293,39 @@
 }
 
 #add-contact-page form #name-email label{
+    color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
 #add-contact-page form #name-email #name{
+    background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     width: 400px;
 }
 
 #add-contact-page form #name-email #name::placeholder{
     font-family: sans-serif;
-    color: rgba(0,0,0,0.3);
+    color: var(--placeholder-color);
 }
 
 
 #add-contact-page form #name-email #email{
+    background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     width: 400px;
 }
 
 #add-contact-page form #name-email #email::placeholder{
     font-family: sans-serif;
-    color: rgba(0,0,0,0.3);
+    color: var(--placeholder-color);
 }
 
 #add-contact-page form #name-email #name-box{
@@ -352,22 +356,24 @@
 }
 
 #add-contact-page form #phone-category label{
+    color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
 #add-contact-page form #phone-category #phone{
+    background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     width: 400px;
 }
 
 #add-contact-page form #phone-category #phone::placeholder{
     font-family: sans-serif;
-    color: rgba(0,0,0,0.3);
+    color: var(--placeholder-color);
 }
 
 
@@ -400,7 +406,7 @@
     padding: 12px 10px;
     font-family: sans-serif;
     color: var(--text-color);
-    background-color: rgba(0,0,0,0.1);
+    background-color: var(--button-grey);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -411,7 +417,7 @@
 }
 #add-contact-page form #phone-category #category-box #category .cat-btn:focus{
     transform: scale(1);
-    background-color: rgb(0,128,64);
+    background-color: var(--secondary-color);
     color: white;
 }
 #add-contact-page form #upload-image-box{
@@ -426,15 +432,17 @@
 }
 
 #add-contact-page form #upload-image-box label{
+    color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
 #add-contact-page form #upload-image-box #upload-image{
+    background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     width: 400px;
 }
@@ -443,7 +451,7 @@
 #add-contact-page form #save-contact{
     padding: 15px 60px;
     font-family: sans-serif;
-    color: var(--base-color);
+    color: white;
     background-color: var(--primary-color);
     border: none;
     border-radius: 20px;
@@ -460,7 +468,7 @@
 
 /* =========================  recent contacts page ======================== */
 #recent-contacts-page{
-    background-color: white;
+    background-color: var(--base-color);
     padding: 60px 0 60px 200px;
     position: relative;
     display: flex;
@@ -468,7 +476,7 @@
     flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 #recent-contacts-page #text-container{
     background-color: transparent;
@@ -484,13 +492,13 @@
 #recent-contacts-page #text-container h1{
     margin: auto;
     text-align: left;
-    color: var(--text-color);
+    color: var(--heading-color);
     font-family: sans-serif;
     font-size: 35px;
 }
 #recent-contacts-page #text-container p{
     margin-top: 15px;
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -516,7 +524,7 @@
     justify-content: start;
     align-items: center;
     width: 400px;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid var(--border-color);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
@@ -543,7 +551,7 @@
 .contact-list .contact-profile-pic::after{
     content: '';
     position: absolute;
-    background-color: rgba(0,0,0,0.3);
+    background-color: var(--placeholder-color);
     height: 100%;
     width:4%;
     top: 0;
@@ -578,7 +586,7 @@
     position: relative;
     font-family: sans-serif;
     font-size: 14px;
-    color: rgba(0,0,0,0.5);
+    color: var(--light-text-color);
 }
 
 
@@ -588,8 +596,8 @@
 
 .footer {
     padding: 60px 0 60px 200px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--footer-color);
+    color: var(--base-color);
     padding: 20px;
     text-align: left;
     display: flex;
@@ -646,13 +654,13 @@ h4 {
 p, a {
     font-family: sans-serif;
     font-size: 14px;
-    color: #ddd;
+    color: var(--footer-a-color);
     margin: 5px 0;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: var(--base-color);
 }
 
 .copyright {
