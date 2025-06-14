@@ -714,3 +714,15 @@ a:hover {
     font-size: 0.9rem;
 }
 
+/* ======= practice page ====== */
+#practice{
+    background-color: var(--base-color);
+    padding: 60px 0 60px 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+

@@ -16,7 +16,7 @@
     <!-- icons -->
     <script src="https://kit.fontawesome.com/f88cd4a022.js" crossorigin="anonymous"></script>
 </head>
-<body id="body">
+<body id="body" onload="fetchContacts()">
     <!-- header -->
     <header style="z-index: 999;">
         <div class="header-div" id="left-div">
@@ -226,11 +226,16 @@
                     <p>&copy; 2025 Booi's Creatings. All rights reserved.</p>
                 </div>
             </footer>
+            <div id="practice">
+                <div id="table">contacts loading...</div>
+            </div>
         </div>
     </div>
 
     <!-- javaScript -->
     <script src="darkMode.js"></script>
     <script src="config.js"></script>
+    <script src="functions.js"></script>
+
 </body>
 </html>
