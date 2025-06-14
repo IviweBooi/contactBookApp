@@ -154,6 +154,7 @@
     font-size: 16px;
 }
 
+
 #contacts-page #contact-list-box{
     background-color: transparent;
     position: relative;
@@ -189,7 +190,7 @@
     background-color: transparent;
     height: 45px;
     width: 45px;
-    border: none;
+    border: 1px solid var(--heading-color);
     border-radius: 40px;
     display: flex;
     flex-wrap: nowrap;
@@ -249,6 +250,7 @@
     padding:  20px 15px;
     transition: all ease-in-out 0.3s;
     animation: animate 2s infinite ease-in-out;
+    margin-left: 5px;
 }
 @keyframes animate{
     0%{transform: scale(1);}
@@ -304,7 +306,7 @@
     align-items: center;
     margin: 0 40px 40px 40px;
 }
-#add-contact-page form #name-email{
+#add-contact-page form #name-surname{
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -314,14 +316,14 @@
     margin-bottom: 40px;
 }
 
-#add-contact-page form #name-email label{
+#add-contact-page form #name-surname label{
     color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
-#add-contact-page form #name-email #name{
+#add-contact-page form #name-surname #name{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -330,13 +332,13 @@
     width: 400px;
 }
 
-#add-contact-page form #name-email #name::placeholder{
+#add-contact-page form #name-surname #name::placeholder{
     font-family: sans-serif;
     color: var(--placeholder-color);
 }
 
 
-#add-contact-page form #name-email #email{
+#add-contact-page form #name-surname #surname{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -345,19 +347,19 @@
     width: 400px;
 }
 
-#add-contact-page form #name-email #email::placeholder{
+#add-contact-page form #name-surname #surname::placeholder{
     font-family: sans-serif;
     color: var(--placeholder-color);
 }
 
-#add-contact-page form #name-email #name-box{
+#add-contact-page form #name-surname #name-box{
     background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
-#add-contact-page form #name-email #email-box{
+#add-contact-page form #name-surname #surname-box{
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -367,7 +369,7 @@
 }
 
 
-#add-contact-page form #phone-category{
+#add-contact-page form #phone-email{
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -377,14 +379,14 @@
     margin-bottom: 40px;
 }
 
-#add-contact-page form #phone-category label{
+#add-contact-page form #phone-email label{
     color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
-#add-contact-page form #phone-category #phone{
+#add-contact-page form #phone-email #phone{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -393,13 +395,31 @@
     width: 400px;
 }
 
-#add-contact-page form #phone-category #phone::placeholder{
+#add-contact-page form #phone-email #phone::placeholder{
+    font-family: sans-serif;
+    color: var(--placeholder-color);
+}
+#add-contact-page form #phone-email #email{
+    background-color: var(--input-background);
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 400px;
+}
+
+#add-contact-page form #phone-email #email::placeholder{
     font-family: sans-serif;
     color: var(--placeholder-color);
 }
 
-
-#add-contact-page form #phone-category #category{
+#add-contact-page form #category-image-box label{
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+#add-contact-page form #category-image-box #category{
     background-color: transparent;
     font-family: sans-serif;
     padding: 0px 15px 0px 5px;
@@ -408,14 +428,23 @@
 }
 
 
-#add-contact-page form #phone-category #phone-box{
+
+#add-contact-page form #phone-email #phone-box{
     background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
-#add-contact-page form #phone-category #category-box{
+#add-contact-page form #phone-email #email-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 80px;
+}
+#add-contact-page form #category-image-box #category-box{
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -424,7 +453,7 @@
     margin-left: 80px;
 }
 
-#add-contact-page form #phone-category #category-box #category .cat-btn{
+#add-contact-page form #category-image-box #category-box #category .cat-btn{
     padding: 12px 10px;
     font-family: sans-serif;
     color: var(--text-color);
@@ -434,33 +463,41 @@
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
-#add-contact-page form #phone-category #category-box #category .cat-btn:hover{
+#add-contact-page form #category-image-box #category-box #category .cat-btn:hover{
     transform: scale(1.07);
 }
-#add-contact-page form #phone-category #category-box #category .cat-btn:focus{
+#add-contact-page form #category-image-box #category-box #category .cat-btn:focus{
     transform: scale(1);
     background-color: var(--secondary-color);
     color: white;
 }
-#add-contact-page form #upload-image-box{
+#add-contact-page form #category-image-box{
     background-color: transparent;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: start;
     align-items: start;
     align-self: start;
     margin-bottom: 40px;
 }
+#add-contact-page form #category-image-box #image{
+   background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
 
-#add-contact-page form #upload-image-box label{
+
+#add-contact-page form #category-image-box label{
     color: var(--text-color);
     font-family: sans-serif;
     margin-bottom: 5px;
     margin-left: 5px;
 }
 
-#add-contact-page form #upload-image-box #upload-image{
+#add-contact-page form #category-image-box #upload-image{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;

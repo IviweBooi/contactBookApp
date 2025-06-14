@@ -51,10 +51,6 @@
                 <div class="nav-icon"><i class="fa-solid fa-plus"></i></div>
                 <h2 class="link-item">Add Contact</h2>
             </button>
-            <button class="nav-link" id="delete-contact-box">
-                <div class="nav-icon"><i class="fa-solid fa-trash"></i></div>
-                <h2 class="link-item">Delete Contact</h2>
-            </button>
 
         </div>
 
@@ -84,42 +80,20 @@
                     <h1>Your Contacts</h1>
                     <p> A list of all your saved contacts.</p>
                 </div>
-                <div id="contact-list-box">
-                    <div class="contact-list">
-                        <div class="contact-profile-pic" style="background-image: url(images/person1.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
-                        <div class="contact-profile-details">
-                            <h2 class="contact-name">Liam Anderson</h2>
-                            <p class="contact-number">073 4566 532</p>
-                        </div>
-                    </div>
-                    <div class="contact-list">
-                        <div class="contact-profile-pic" style="background-image: url(images/person2.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
-                        <div class="contact-profile-details">
-                            <h2 class="contact-name">Noah Thompson</h2>
-                            <p class="contact-number">073 4566 532</p>
-                        </div>
-                    </div>
-                    <div class="contact-list">
-                        <div class="contact-profile-pic" style="background-image: url(images/person3.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
-                        <div class="contact-profile-details">
-                            <h2 class="contact-name">Ethan Harris</h2>
-                            <p class="contact-number">073 4566 532</p>
-                        </div>
-                    </div>
-                    <div class="contact-list">
-                        <div class="contact-profile-pic" style="background-image: url(images/person4.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
-                        <div class="contact-profile-details">
-                            <h2 class="contact-name">Emma Wilson</h2>
-                            <p class="contact-number">073 4566 532</p>
-                        </div>
-                    </div>
-                    <div class="contact-list">
-                        <div class="contact-profile-pic" style="background-image: url(images/person5.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
-                        <div class="contact-profile-details">
-                            <h2 class="contact-name">Oliver Roberts</h2>
-                            <p class="contact-number">073 4566 532</p>
-                        </div>
-                    </div>
+                <div id="table">
+                    <tr>
+                        <td>
+                            <div id="loading-contact-list-box">
+                                <div class="loading-contact-list">
+                                    <div class="loading-contact-profile-pic"></div>
+                                    <div class="loading-contact-profile-details">
+                                        <h2 class="loading-contact-name">Liam Anderson</h2>
+                                        <p class="loading-contact-number">073 4566 532</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
                 </div>
                 <button id="more-btn" onclick="" type="button">See More<i class="fa-solid fa-angles-right"></i></button>
             </div>
@@ -133,20 +107,30 @@
                 </div>
 
                 <form id="addContacts">
-                    <div id="name-email">
+                    <div id="name-surname">
                         <div id="name-box">
-                            <label for="name">Name</label>
-                            <input id="name" type="text" autocomplete="name" placeholder="Enter name...">
+                            <label for="name">Firstname</label>
+                            <input id="name" type="text" autocomplete="name" placeholder="Enter Firstname...">
                         </div>
-                        <div id="email-box">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" autocomplete="email" placeholder="Enter Email...">
+                        <div id="surname-box">
+                            <label for="surname">Lastname</label>
+                            <input id="surname" type="text" autocomplete="surname" placeholder="Enter Lastname...">
                         </div>
                     </div>
-                    <div id="phone-category">
+                    <div id="phone-email">
                         <div id="phone-box">
                             <label for="phone">Phone</label>
-                            <input id="phone" type="number" autocomplete="phone"  placeholder="Enter Phone...">
+                            <input id="phone" type="number" autocomplete="phone"  placeholder="012 3456 789....">
+                        </div>
+                        <div id="email-box">
+                            <label for="email">email</label>
+                            <input id="email" type="email" autocomplete="email"  placeholder="example@example.com">
+                        </div>
+                    </div>
+                    <div id="category-image-box">
+                        <div id="image">
+                            <label for="upload-image">Profile Image</label>
+                            <input id="upload-image" type="file" autocomplete="name" placeholder="Enter name...">
                         </div>
                         <div id="category-box">
                             <label for="category">Category</label>
@@ -157,10 +141,6 @@
                                     <button style="border:none;" class="cat-btn" id="other-btn" type="button">Other</button>
                             </div>
                         </div>
-                    </div>
-                    <div id="upload-image-box">
-                        <label for="upload-image">Profile Image</label>
-                        <input id="upload-image" type="file" autocomplete="name" placeholder="Enter name...">
                     </div>
                     <button id="save-contact" type="submit" id="save-contact-btn">Save Contact</button>
                 </form>
@@ -198,7 +178,7 @@
                 <button id="see-more-btn" onclick="" type="button">See More<i class="fa-solid fa-angles-right"></i></button>
 
             </div>
-            <! -- footer -->
+           <!-- footer -->
             <footer class="footer">
                 <div class="footer-container">
                     <div class="contact-info">
@@ -226,9 +206,6 @@
                     <p>&copy; 2025 Booi's Creatings. All rights reserved.</p>
                 </div>
             </footer>
-            <div id="practice">
-                <div id="table">contacts loading...</div>
-            </div>
         </div>
     </div>
 

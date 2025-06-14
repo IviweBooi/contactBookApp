@@ -10,18 +10,24 @@ function fetchContacts(){
 }
 
 function displayOutput(data){
-    output = "<table>";
-
+    output ="<table>";
     for(a in data){
         output += `
             <tr>
-                <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width='40'/></td>
-                <td><h5>${data[a].firstname}</h5></td>
-                <td><h5>${data[a].lastname}</h5></td>
-                <td><h5>${data[a].mobile}</h5></td>
+                <td>
+                    <div id="contact-list-box">
+                        <div class="contact-list">
+                            <div class="contact-profile-pic" style="background-image: url(${rootPath}controller/uploads/${data[a].avatar});background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                            <div class="contact-profile-details">
+                                <h2 class="contact-name">${data[a].firstname} ${data[a].lastname}</h2>
+                                <p class="contact-number">${data[a].mobile}</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
         `
     }
-    output += "</table>";
+    output += "</table>"
     document.getElementById("table").innerHTML = output;
 }
