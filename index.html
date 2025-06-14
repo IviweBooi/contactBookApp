@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contact-book-app</title>
+    <title>Home-page</title>
     <!-- my stylesheets -->
     <link rel="stylesheet" type="text/css" href="header.css"/>
     <link rel="stylesheet" type="text/css" href="global.css"/>
@@ -35,7 +35,7 @@
     <!-- content -->
     <div id="content">
         <div id="side-div">
-            <button class="nav-link" id="contacts-box">
+            <button onclick="navigate_to_contacts()" class="nav-link" id="contacts-box">
                 <div class="nav-icon"><i class="fa-solid fa-address-book"></i></div>
                 <h2 class="link-item">Contacts</h2>
             </button>
@@ -95,7 +95,7 @@
                         </td>
                     </tr>
                 </div>
-                <button id="more-btn" onclick="" type="button">See More<i class="fa-solid fa-angles-right"></i></button>
+                <button onclick="navigate_to_contacts()" id="more-btn" onclick="" type="button">See More<i class="fa-solid fa-angles-right"></i></button>
             </div>
 
             <!-- add contact page -->
@@ -213,6 +213,7 @@
     <script src="darkMode.js"></script>
     <script src="config.js"></script>
     <script src="functions.js"></script>
+    <script src="buttons.js"></script>
 
 </body>
 </html>
