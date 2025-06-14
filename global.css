@@ -29,6 +29,7 @@ body{
     --input-background: rgba(255, 255, 255, 1); /* Light gray for input background */
     --heading2-color: rgba(0, 0, 0, 0.7);   /* Semi-transparent black for secondary headings */
     --theme-icon-color: white;
+    --red: rgba(230,0,0,1);
 }
 
 .darkMode {
@@ -51,4 +52,5 @@ body{
     --input-background: rgba(60, 60, 60, 1); /* Dark gray for input background in dark mode */
     --heading2-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for secondary headings in dark mode */
     --theme-icon-color: white;
+    --red: rgba(255, 0, 0, 1); /* Darker red for dark mode */
 }

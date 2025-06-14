@@ -7,16 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacts-Page</title>
     <!-- links -->
+    <link rel="stylesheet" type="text/css" href="global.css"/>
     <link rel="stylesheet" type="text/css" href="contactsPage.css"/>
-</head>
-<body>
-    <header>
-        <div id="left-div">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/f88cd4a022.js" crossorigin="anonymous"></script>
 
+
+</head>
+<body id="body" onload="fetchAllContacts()">
+    <header id="contact-page-header">
+        <div id="left-div">
+            <button id="back-btn" type="button" onclick="navigate_to_home()"><i class="fa-solid fa-chevron-left"></i>Back</button>
         </div>
         <div id="right-div">
-
+            <div id="refresh-btn" onclick="fetchAllContacts()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <button id="add-btn" type="button" onclick="">Add<i class="fa-solid fa-plus"></i></button>
         </div>
     </header>
+
+    <!-- content -->
+    <div id="scroll-div">
+        <h1>Contacts</h1>
+        <div id="search-box">
+            <input type="text" id="search-contact" autocomplete="name" placeholder="Search Contact..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="new_table">
+            Loading....
+        </div>
+    </div>
+
+    <script src="darkMode.js"></script>
+    <script src="config.js"></script>
+    <script src="buttons.js"></script>
+    <script src="functions.js"></script>
+
+
 </body>
 </html>

@@ -101,7 +101,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 8px;
-    border: none;
+    border: 1px solid var(--heading-color);
     border-radius: 50px;
     margin-right: 20px;
     transition: all linear 0.3s;
@@ -114,7 +114,6 @@ header{
     object-fit: contain;
 }
 #theme-icon:hover,active {
-    box-shadow: 1px 0px 2px var(--box-shadow-color);
     transform: scale(1.1);
 }
 
