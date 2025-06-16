@@ -1,0 +1,190 @@
+#edit-contact-page-header{
+    background-color: var(--navbar-color) ;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: stretch;
+    padding:0 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 0px 2px var(--box-shadow-color);
+    z-index: 1000;
+}
+
+/* left div */
+#edit-contact-page-header #left-div{
+    background-color: transparent;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-right: 40px;
+}
+#back-btn{
+    background-color: transparent;
+    font-family: sans-serif;
+    color: var(--heading-color);
+    border: 1px solid var(--heading-color);
+    border-radius: 100px;
+    padding:  15px 15px;
+    transition: all ease-in-out 0.3s;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#back-btn:hover{
+    transform: scale(1.1);
+}
+
+#back-btn i{
+    margin-right: 5px;
+}
+
+/* ============= main content=============== */
+
+
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.profile-image-input {
+    display: none; /* Hide the default file input */
+}
+.profile-image-label {
+    display: inline-block;
+    width: 150px;              /* Set width */
+    height: 150px;             /* Set height */
+    border-radius: 50%;        /* Makes the label round */
+    background-color: #ccc;    /* Default background color */
+    background-image: url('images/user.png'); /* Default image */
+    background-repeat: no-repeat;
+    background-size: cover;     /* Cover the entire label */
+    border: 1px solid black;
+    background-position: center; /* Center the image */
+    cursor: pointer;            /* Change cursor to indicate clickable */
+    margin-bottom: 10px;
+}
+
+#image-container #add-btn{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    font-family: sans-serif;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding:  10px 15px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+#add-btn:hover{
+    transform: scale(1.1);
+}
+
+#add-btn i{
+    margin-left: 5px;
+}
+
+
+
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 20px;
+}
+
+#profile-picture {
+    text-align: center;
+}
+
+#profileImage {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: #28a745; /* Green for save button */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+button#edit-contact{
+    background-color: rgba(0, 64, 128, 1);
+}
+button#delete-contact {
+    background-color: #dc3545; /* Red for delete button */
+}
+
+
+label {
+    font-family: sans-serif;
+    display: block;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+input {
+    background-color: white;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button:hover {
+    opacity: 0.9;
+
+}
+
+button#delete-contact:hover {
+    opacity: 0.8;
+}}

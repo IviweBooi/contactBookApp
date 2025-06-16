@@ -161,6 +161,7 @@ form #name-surname label{
 }
 
 form #name-surname #firstname{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -176,6 +177,7 @@ form #name-surname #firstname::placeholder{
 
 
 form #name-surname #lastname{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -224,6 +226,7 @@ form #phone-email label{
 }
 
 form #phone-email #phone{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -237,6 +240,7 @@ form #phone-email #phone::placeholder{
     color: var(--placeholder-color);
 }
 form #phone-email #email{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;

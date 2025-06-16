@@ -14,6 +14,11 @@ function navigate_to_add_contact(){
     window.open("addContactPage.html", "_self");
 }
 
+// function to navigate to the edit--contact page
+function navigate_to_edit_contact(id){
+    window.open("editContactPage.html?id=" + id, "_self");
+}
+
 const input = document.getElementById('avatar');
 const label = document.querySelector('.profile-image-label');
 const button = document.getElementById('add-btn');

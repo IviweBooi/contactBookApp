@@ -325,6 +325,7 @@
 }
 
 #add-contact-page form #name-surname #firstname{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -340,6 +341,7 @@
 
 
 #add-contact-page form #name-surname #lastname{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -388,6 +390,7 @@
 }
 
 #add-contact-page form #phone-email #phone{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -401,6 +404,7 @@
     color: var(--placeholder-color);
 }
 #add-contact-page form #phone-email #email{
+    color: var(--text-color);
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -483,6 +487,7 @@
     margin-bottom: 40px;
 }
 #add-contact-page form #category-image-box #image{
+   color: var(--text-color);
    background-color: transparent;
     display: flex;
     flex-direction: column;

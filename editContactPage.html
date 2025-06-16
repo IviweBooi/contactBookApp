@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+     <!-- links -->
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="editContactPage.css"/>
+    <!-- icons -->
+</head>
+<body id="body" onload="getContact()">
+    <header id="edit-contact-page-header">
+        <div id="left-div">
+            <button id="back-btn" type="button" onclick="navigate_to_home()"><i class="fa-solid fa-chevron-left"></i>Back</button>
+        </div>
+    </header>
+    <div id="contact-details">
+        <h1>Contact Details</h1>
+
+        <form id="contactInfoForm">
+            <div id="image-container">
+                <input type="file" name="avatar" id="avatar" class="profile-image-input" accept="image/*" readonly>
+                <label for="avatar" id='imageDisplay' class="profile-image-label" ></label>
+                <button id="add-btn" hidden>Change Photo<i class="fa-solid fa-plus"></i></button>
+            </div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter Firstname" readonly>
+
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Lastname" readonly>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="mobile" placeholder="012 3456 789" readonly>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" readonly>
+
+            <div>
+                <label>
+                    <input type="checkbox" id="favourite" name="favourite">
+                    Mark as Favourite
+                </label>
+            </div>
+
+            <button id="edit-contact" type="button" >Edit</button>
+            <button  id="save-contact" type="submit" hidden>Save Changes</button>
+            <button id="delete-contact" type="button" >Delete Contact</button>
+        </form>
+    </div>
+
+    <!-- javaScript -->
+    <script src="darkMode.js"></script>
+    <script src="config.js"></script>
+    <script src="buttons.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>
