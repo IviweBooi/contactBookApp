@@ -298,6 +298,7 @@
     align-self: center;
 }
 
+
 #add-contact-page form{
     background-color: transparent;
     display: flex;
@@ -323,7 +324,7 @@
     margin-left: 5px;
 }
 
-#add-contact-page form #name-surname #name{
+#add-contact-page form #name-surname #firstname{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -332,13 +333,13 @@
     width: 400px;
 }
 
-#add-contact-page form #name-surname #name::placeholder{
+#add-contact-page form #name-surname #firstname::placeholder{
     font-family: sans-serif;
     color: var(--placeholder-color);
 }
 
 
-#add-contact-page form #name-surname #surname{
+#add-contact-page form #name-surname #lastname{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
@@ -347,7 +348,7 @@
     width: 400px;
 }
 
-#add-contact-page form #name-surname #surname::placeholder{
+#add-contact-page form #name-surname #lastname::placeholder{
     font-family: sans-serif;
     color: var(--placeholder-color);
 }

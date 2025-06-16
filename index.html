@@ -47,7 +47,7 @@
                 <div class="nav-icon"><i class="fa-solid fa-clock"></i></div>
                 <h2 class="link-item">Recently Added</h2>
             </button>
-            <button class="nav-link" id="add-contact-box">
+            <button onclick="navigate_to_add_contact()" class="nav-link" id="add-contact-box">
                 <div class="nav-icon"><i class="fa-solid fa-plus"></i></div>
                 <h2 class="link-item">Add Contact</h2>
             </button>
@@ -66,9 +66,9 @@
                 <div id="search-contact-box">
                     <input type="text" id="search-contact" autocomplete="name" placeholder="Search Contact..." />
                 </div>
-                <button id="add-contact-btn">Add New Contact</button>
+                <button onclick="navigate_to_add_contact()" id="add-contact-btn">Add New Contact</button>
                 <div id="action-btns">
-                    <button class="action-btn" id="all-btb">All</button>
+                    <button class="action-btn" id="all-btb" onclick="navigate_to_contacts()">All</button>
                     <button class="action-btn" id="favorites-btn">Favorites</button>
                     <button class="action-btn" id="recent-btn" style="margin-right: 0;">Recently Added</button>
                 </div>
@@ -97,32 +97,32 @@
                 <form id="addContacts">
                     <div id="name-surname">
                         <div id="name-box">
-                            <label for="name">Firstname</label>
-                            <input id="name" type="text" autocomplete="name" placeholder="Enter Firstname...">
+                            <label for="firstname">Firstname</label>
+                            <input name="firstname" id="firstname" type="text" autocomplete="name" placeholder="Enter Firstname...">
                         </div>
                         <div id="surname-box">
-                            <label for="surname">Lastname</label>
-                            <input id="surname" type="text" autocomplete="surname" placeholder="Enter Lastname...">
+                            <label for="lastname">Lastname</label>
+                            <input name="lastname" id="lastname" type="text" autocomplete="surname" placeholder="Enter Lastname...">
                         </div>
                     </div>
                     <div id="phone-email">
                         <div id="phone-box">
                             <label for="phone">Phone</label>
-                            <input id="phone" type="number" autocomplete="phone"  placeholder="012 3456 789....">
+                            <input  name="mobile" id="phone" type="number" autocomplete="phone"  placeholder="012 3456 789....">
                         </div>
                         <div id="email-box">
                             <label for="email">email</label>
-                            <input id="email" type="email" autocomplete="email"  placeholder="example@example.com">
+                            <input name="email" id="email" type="email" autocomplete="email"  placeholder="example@example.com">
                         </div>
                     </div>
                     <div id="category-image-box">
                         <div id="image">
                             <label for="upload-image">Profile Image</label>
-                            <input id="upload-image" type="file" autocomplete="name" placeholder="Enter name...">
+                            <input name="avatar" id="upload-image" type="file" autocomplete="name" placeholder="Enter name...">
                         </div>
                         <div id="category-box">
                             <label for="category">Category</label>
-                            <div id="category">
+                             <div id="category">
                                     <button style="border:none;" class="cat-btn" id="friend-btn" type="button">Friend</button>
                                     <button style="border:none;" class="cat-btn" id="colleague-btn" type="button">Colleague</button>
                                     <button style="border:none;" class="cat-btn" id="family-btn" type="button">Family</button>

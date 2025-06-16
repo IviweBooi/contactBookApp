@@ -73,5 +73,31 @@ function displayAllOutput(data){
     document.getElementById("new_table").innerHTML = new_output;
 }
 
+function submitForm(e){
+    e.preventDefault();
+    const form = new FormData(document.querySelector('#addContacts'));
+    form.append('apiKey',apiKey);
+    fetch(rootPath + 'controller/insert-contact',{
+        method: 'POST',
+        headers: {'Accept': 'application/json, *.*'},
+        body: form
+    })
+    .then(function(response){
+        return response.text();
+    })
+    .then(function(data){
+        if(data =="1"){
+            alert("Contact added.");
+            //link user to homepage
+        }else{
+            alert(data);
+            //link user to homepage
+        }
+    })
+}
+function homeLink(){
+    window.open("index.html", "_self");
+}
+
 
 

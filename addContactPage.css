@@ -1,0 +1,348 @@
+header{
+    background-color: var(--navbar-color) ;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding:0 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 0px 2px var(--box-shadow-color);
+    z-index: 1000;
+}
+
+/* left div */
+header #left-div{
+    background-color: transparent;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-right: 40px;
+}
+#back-btn{
+    background-color: transparent;
+    font-family: sans-serif;
+    color: var(--heading-color);
+    border: 1px solid var(--heading-color);
+    border-radius: 100px;
+    padding:  15px 15px;
+    transition: all ease-in-out 0.3s;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#back-btn:hover{
+    transform: scale(1.1);
+}
+
+#back-btn i{
+    margin-right: 5px;
+}
+
+/* ============= main content=============== */
+#content{
+    margin-top: 61px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+}
+
+#text-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+#text-box h1{
+    color: var(--heading-color);
+    font-size: 35px;
+    align-self: start;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#text-box p{
+    color: var(--light-text-color);
+    font-size: 16px;
+    align-self: center;
+}
+#image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.profile-image-input {
+    display: none; /* Hide the default file input */
+}
+.profile-image-label {
+    display: inline-block;
+    width: 150px;              /* Set width */
+    height: 150px;             /* Set height */
+    border-radius: 50%;        /* Makes the label round */
+    background-color: #ccc;    /* Default background color */
+    background-image: url('images/user.png'); /* Default image */
+    background-repeat: no-repeat;
+    background-size: cover;     /* Cover the entire label */
+    border: 1px solid black;
+    background-position: center; /* Center the image */
+    cursor: pointer;            /* Change cursor to indicate clickable */
+    margin-bottom: 10px;
+}
+
+#add-btn{
+    background-color: var(--button-grey);
+    font-family: sans-serif;
+    color: var(--heading-color);
+    border: none;
+    border-radius: 100px;
+    padding:  10px 15px;
+    transition: all ease-in-out 0.3s;
+
+    cursor: pointer;
+}
+
+#add-btn:hover{
+    transform: scale(1.1);
+}
+
+#add-btn i{
+    margin-left: 5px;
+}
+
+
+/* form */
+form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 40px 40px;
+}
+form #name-surname{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+form #name-surname label{
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+form #name-surname #firstname{
+    background-color: var(--input-background);
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 400px;
+}
+
+form #name-surname #firstname::placeholder{
+    font-family: sans-serif;
+    color: var(--placeholder-color);
+}
+
+
+form #name-surname #lastname{
+    background-color: var(--input-background);
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 400px;
+}
+
+form #name-surname #lastname::placeholder{
+    font-family: sans-serif;
+    color: var(--placeholder-color);
+}
+
+form #name-surname #name-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+form #name-surname #surname-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 80px;
+}
+
+
+form #phone-email{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+form #phone-email label{
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+form #phone-email #phone{
+    background-color: var(--input-background);
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 400px;
+}
+
+form #phone-email #phone::placeholder{
+    font-family: sans-serif;
+    color: var(--placeholder-color);
+}
+form #phone-email #email{
+    background-color: var(--input-background);
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 400px;
+}
+
+form #phone-email #email::placeholder{
+    font-family: sans-serif;
+    color: var(--placeholder-color);
+}
+
+form #category-image-box label{
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+form #category-image-box #category{
+    background-color: transparent;
+    font-family: sans-serif;
+    padding: 0px 15px 0px 5px;
+    border: none;
+    width: 400px;
+}
+
+
+
+form #phone-email #phone-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+form #phone-email #email-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 80px;
+}
+form #category-image-box #category-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+
+form #category-image-box #category-box #category .cat-btn{
+    padding: 12px 10px;
+    font-family: sans-serif;
+    color: var(--text-color);
+    background-color: var(--button-grey);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+form #category-image-box #category-box #category .cat-btn:hover{
+    transform: scale(1.07);
+}
+form #category-image-box #category-box #category .cat-btn:focus{
+    transform: scale(1);
+    background-color: var(--secondary-color);
+    color: white;
+}
+form #category-image-box{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    align-self: start;
+    margin-bottom: 40px;
+}
+
+
+form #category-image-box label{
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+form #save-contact{
+    padding: 15px 60px;
+    font-family: sans-serif;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    visibility: visible;
+}
+
+form #save-contact:hover{
+    transform: scale(1.1);
+}
+

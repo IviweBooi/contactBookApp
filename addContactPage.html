@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Contact Page</title>
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="addContactPage.css"/>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/f88cd4a022.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header id="add-contact-page-header">
+        <div id="left-div">
+            <button id="back-btn" type="button" onclick="navigate_to_home()"><i class="fa-solid fa-chevron-left"></i>Back</button>
+        </div>
+    </header>
+    <div id="content">
+            <div id="text-box">
+                <h1>Add New Contact</h1>
+                <p>Fill in the details below.</p>
+            </div>
+            <div id="image-div">
+                <div id="image-container">
+                    <input type="file" name="avatar" id="profileImageInput" class="profile-image-input" accept="image/*">
+                    <label for="profileImageInput" class="profile-image-label"></label>
+                    <button id="add-btn">Add Photo<i class="fa-solid fa-plus"></i></button>
+                </div>
+                <form id="addContacts">
+                    <div id="name-surname">
+                        <div id="name-box">
+                            <label for="firstname">Firstname</label>
+                            <input name="firstname" id="firstname" type="text" autocomplete="name" placeholder="Enter Firstname...">
+                        </div>
+                        <div id="surname-box">
+                            <label for="lastname">Lastname</label>
+                            <input name="lastname" id="lastname" type="text" autocomplete="lastname" placeholder="Enter Lastname...">
+                        </div>
+                    </div>
+                    <div id="phone-email">
+                        <div id="phone-box">
+                            <label for="phone">Phone</label>
+                            <input name="mobile" id="phone" type="number" autocomplete="phone"  placeholder="012 3456 789....">
+                        </div>
+                        <div id="email-box">
+                            <label for="email">email</label>
+                            <input name="email" id="email" type="email" autocomplete="email"  placeholder="example@example.com">
+                        </div>
+                    </div>
+                    <div id="category-image-box">
+                        <div id="category-box">
+                            <label for="category">Category</label>
+                            <div id="category">
+                                    <button style="border:none;" class="cat-btn" id="friend-btn" type="button">Friend</button>
+                                    <button style="border:none;" class="cat-btn" id="colleague-btn" type="button">Colleague</button>
+                                    <button style="border:none;" class="cat-btn" id="family-btn" type="button">Family</button>
+                                    <button style="border:none;" class="cat-btn" id="other-btn" type="button">Other</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="save-contact" type="submit" id="save-contact-btn">Save Contact</button>
+                </form>
+
+            </div>
+    </div>
+    <!-- javaScript -->
+    <script src="darkMode.js"></script>
+    <script src="config.js"></script>
+    <script src="buttons.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>
