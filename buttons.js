@@ -14,7 +14,7 @@ function navigate_to_add_contact(){
     window.open("addContactPage.html", "_self");
 }
 
-const input = document.getElementById('profileImageInput');
+const input = document.getElementById('avatar');
 const label = document.querySelector('.profile-image-label');
 const button = document.getElementById('add-btn');
 

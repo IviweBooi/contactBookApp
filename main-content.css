@@ -498,7 +498,7 @@
     margin-left: 5px;
 }
 
-#add-contact-page form #category-image-box #upload-image{
+#add-contact-page form #category-image-box #avatar{
     background-color: var(--input-background);
     font-family: sans-serif;
     padding: 10px 15px 10px 15px;
