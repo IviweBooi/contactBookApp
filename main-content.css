@@ -66,6 +66,7 @@
     padding-bottom: 15px;
 }
 #landing-page #search-contact-box #search-contact{
+    color: var(--text-color);
     background-color: var(--input-background);
     width: 400px;
     font-family: sans-serif;
@@ -757,15 +758,5 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* ======= practice page ====== */
-#practice{
-    background-color: var(--base-color);
-    padding: 60px 0 60px 200px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: center;
-}
+
 
